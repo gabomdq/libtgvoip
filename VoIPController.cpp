@@ -331,11 +331,13 @@ void VoIPController::Stop(){
 	if(sendThread){
 		sendThread->Join();
 		delete sendThread;
+		sendThread=NULL;
 	}
 	LOGD("before join recvThread");
 	if(recvThread){
 		recvThread->Join();
 		delete recvThread;
+		recvThread = NULL;
 	}
 	LOGD("before stop messageThread");
 	messageThread.Stop();

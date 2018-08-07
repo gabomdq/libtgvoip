@@ -3,7 +3,7 @@
 // For more information, see http://unlicense.org or the UNLICENSE file
 // you should have received with this source code distribution.
 //
-
+#include <libgen.h>
 #include "AudioPulse.h"
 #include <dlfcn.h>
 #include "../../logging.h"
