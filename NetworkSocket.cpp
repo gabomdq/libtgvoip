@@ -18,8 +18,12 @@
 #include "VoIPController.h"
 #include "Buffers.h"
 
+#ifndef MIN_UDP_PORT
 #define MIN_UDP_PORT 16384
+#endif
+#ifndef MAX_UDP_PORT
 #define MAX_UDP_PORT 32768
+#endif
 
 using namespace tgvoip;
 
